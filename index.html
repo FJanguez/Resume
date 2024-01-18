@@ -5,28 +5,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio Filipe Janguez</title>
-  <!-- Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <!-- DevIcon Fonts-->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+  <!-- DevIcon Fonts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-  <!-- CSS do Projeto-->
+  <!-- CSS do Projeto -->
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
   <main id="container">
     <aside id="bio-container">
-      <h2>Filipe Janguez</h2>
+      <h2></h2>
       <img id="bio-img" src="img\my_img.jpg" alt="Filipe Janguez" />
-      <p>
-        Olá, meu nome é Filipe Janguez e sou
+      <p class="presentation">
+        Olá, meu nome é
+        <span class="highlight">Filipe Janguez</span>
+        e sou
         <span class="highlight">Desenvolvedor Full Stack.</span>
       </p>
-      <p id="welcome-text">Seja Bem-Vindo!</p>
+      <p id="welcome-text" class="presentation">Seja Bem-Vindo!</p>
       <ul id="social-container">
         <li>
           <a href="https://www.linkedin.com/in/filipe-janguez-0b50901b3/" target="_blank"><ion-icon
@@ -40,24 +42,33 @@
       <div id="email-container">
         <ion-icon name="mail-outline"></ion-icon><a href="mailto:filipe.janguez@gmail.com">filipe.janguez@gmail.com</a>
       </div>
+      <!-- <br>
+      <div id="curriculo-container">
+        <a href="Currículo.docx" download>
+          <button type="button" class="download-btn"><ion-icon name="cloud-download-outline"></ion-icon>Currículo em PDF</button>
+        </a>
+      </div> -->
     </aside>
     <section id="about-container">
       <h1 id="name">Filipe Janguez</h1>
       <p id="title"><span id="highlight">Desenvolvedor Full Stack</span></p>
       <p class="description1">
         Desenvolvedor Full Stack apaixonado por transformar ideias em soluções
-        digitais. Domínio em tecnologias como Python, Java, HTML, CSS e
-        JavaScript. Certificado em Azure. Explore meus projetos e
-        certificações!
+        digitais.
       </p>
       <p class="description2">
-        Olá, sou Filipe Janguez, Desenvolvedor Full Stack com paixão por criar
-        soluções inovadoras. Minhas habilidades abrangem Python, Java, HTML,
-        CSS e JavaScript, permitindo que eu atue tanto no back-end quanto no
-        front-end. Minhas certificações Azure (AZ-900 e DP-900) validam meu
-        conhecimento em tecnologias em nuvem e arquitetura de dados. Conheça
-        meus projetos e certificações para ver como estou moldando o mundo
-        digital!
+        Olá, sou Filipe Janguez, um entusiasta Desenvolvedor Full Stack apaixonado por transformar ideias em soluções
+        digitais inovadoras. Com experiência sólida em tecnologias como Python, Java, HTML, CSS, JavaScript e
+        certificações abrangentes, estou constantemente atualizando meu conjunto de habilidades para oferecer soluções
+        ainda mais robustas.
+        <br><br>
+
+        Atualmente, possuo certificações em Azure (AZ-900, DP-900, AI-900), e AWS (AWS Fundamentals), ampliando meu
+        conhecimento em inteligência artificial e serviços em nuvem. Minha versatilidade me permite trabalhar
+        eficientemente tanto no back-end quanto no front-end, proporcionando uma abordagem completa para o
+        desenvolvimento de projetos.
+        <br><br>
+
       </p>
       <a href="https://github.com/FJanguez?tab=repositories" id="btn-project" target="_blank"><ion-icon
           name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
@@ -157,7 +168,8 @@
           <p class="certificacoes-title-aws">AWS Fundamentals</p>
           <a href="https://learn.microsoft.com/api/credentials/share/pt-br/FilipeJanguez-6141/B9A0E8E5A0FB4B00?sharingId=91F403899C181E27"
             target="_blank">
-            <img id="certification-img" src="img\certifications\AWS-Practioner.png" alt="Certificação AZ-900" />
+            <img id="certification-img" src="img\certifications\AWS-Practioner.png"
+              alt="Certificação AWS-Fundamentals" />
           </a>
         </div>
       </div>
