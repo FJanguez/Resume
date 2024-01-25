@@ -10,11 +10,12 @@
 :root {
   --background-color: #000005;
   --main-color: #40a2d8;
-  --main-text-color: #f3f0e2;
+  --main-text-color: #ffffff;
   --hor-lines-color: #ffffff17;
   --ver-lines-color: #0b60b0;
   --bio-bg-color: #032940;
   --aws-color: #e6880f;
+  --fade-color: #ffffffc0;
 }
 
 /*Containers*/
@@ -75,7 +76,8 @@
   font-size: 30px;
 }
 
-#email-container {
+#email-container,
+#phone-container {
   display: flex;
   justify-content: center;
 }
@@ -94,6 +96,39 @@
   flex: 1 1 0;
 }
 
+#phone-container {
+  padding-top: 9px;
+}
+
+#phone-container p {
+  color: var(--main-text-color);
+  text-decoration: none;
+  max-width: 225px;
+}
+
+#phone-container ion-icon {
+  color: var(--main-color);
+  font-size: 20px;
+  margin-right: 5px;
+  max-width: 20px;
+  flex: 1 1 0;
+}
+
+#telefone-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#mensagem-copiado {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
 #experience-container {
   padding-top: 100px;
   display: flex;
@@ -106,7 +141,8 @@
   margin-top: 25px;
 }
 
-#certificacoes-container {
+#certificacoes-container,
+#experiencia-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -135,6 +171,7 @@
 
 .highlight {
   color: var(--main-color);
+  font-weight: bold;
 }
 
 #name {
@@ -217,7 +254,9 @@
   margin-bottom: 35px;
 }
 
-.certificacoes-title {
+.certificacoes-title,
+.certificacoes-title-aws,
+.experiencia-title {
   font-size: 24px;
   margin-bottom: 25px;
   font-weight: bold;
@@ -226,10 +265,6 @@
 }
 
 .certificacoes-title-aws {
-  font-size: 24px;
-  margin-bottom: 25px;
-  font-weight: bold;
-  padding-left: 10px;
   border-left: 5px solid var(--aws-color);
 }
 
@@ -357,4 +392,27 @@
   .certificacoes-box i {
     font-size: 40px;
   }
+}
+
+.experiencia-title {
+  margin-bottom: 15px;
+}
+
+.experiencia-long-description {
+  padding-top: 15px;
+  margin-top: 15px; /* Adiciona margem ao topo para separar da descrição anterior */
+  margin-bottom: 2px; /* Ajuste o valor conforme necessário */
+}
+
+.experiencia-first-description {
+  color: var(--fade-color);
+}
+
+.experiencia-long-description p {
+}
+
+.experiencia-box {
+  flex: 1 1 80%;
+  max-width: 80%;
+  margin-bottom: 35px;
 }

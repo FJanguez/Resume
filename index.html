@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Filipe Janguez</title>
+  <title>Currículo Filipe Janguez</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,12 +42,12 @@
       <div id="email-container">
         <ion-icon name="mail-outline"></ion-icon><a href="mailto:filipe.janguez@gmail.com">filipe.janguez@gmail.com</a>
       </div>
-      <!-- <br>
-      <div id="curriculo-container">
-        <a href="Currículo.docx" download>
-          <button type="button" class="download-btn"><ion-icon name="cloud-download-outline"></ion-icon>Currículo em PDF</button>
-        </a>
-      </div> -->
+      <div id="phone-container">
+        <ion-icon name="call-outline" id="telefone-icon" onclick="copiarNumero()"></ion-icon>
+        <p id="telefone-link" onclick="copiarNumero()">(19) 98949-0720</p>
+
+        <div id="mensagem-copiado">Número de telefone copiado!</div>
+      </div>
     </aside>
     <section id="about-container">
       <h1 id="name">Filipe Janguez</h1>
@@ -139,27 +139,27 @@
         </div>
       </div>
       <h2 id="skills-section-title">Minhas Certificações</h2>
-      <p class="description">Conheça as certificações que possuo:</p>
+      <p class="description">Conheça as certificações que possuo até o momento:</p>
       <div id="certificacoes-container">
         <div class="certificacoes-box">
           <p class="certificacoes-title">Azure AZ-900</p>
           <a href="https://learn.microsoft.com/api/credentials/share/pt-br/FilipeJanguez-6141/B9A0E8E5A0FB4B00?sharingId=91F403899C181E27"
             target="_blank">
-            <img id="certification-img" src="img\certifications\AZ-900.png" alt="Certificação AZ-900" />
+            <img id="certification-img" src="img\certificacoes\AZ-900.png" alt="Certificação AZ-900" />
           </a>
         </div>
         <div class="certificacoes-box">
           <p class="certificacoes-title">Azure DP-900</p>
           <a href="https://learn.microsoft.com/api/credentials/share/pt-br/FilipeJanguez-6141/D39DE860B15D4A18?sharingId=91F403899C181E27"
             target="_blank">
-            <img id="certification-img" src="img\certifications\DP-900.png" alt="Certificação DP-900" />
+            <img id="certification-img" src="img\certificacoes\DP-900.png" alt="Certificação DP-900" />
           </a>
         </div>
         <div class="certificacoes-box">
           <p class="certificacoes-title">Azure AI-900</p>
           <a href="https://learn.microsoft.com/api/credentials/share/pt-br/FilipeJanguez-6141/F08105552F5B31B0?sharingId=91F403899C181E27"
             target="_blank">
-            <img id="certification-img" src="img\certifications\AI-900.png" alt="Certificação AI-900" />
+            <img id="certification-img" src="img\certificacoes\AI-900.png" alt="Certificação AI-900" />
           </a>
         </div>
       </div>
@@ -168,17 +168,81 @@
           <p class="certificacoes-title-aws">AWS Fundamentals</p>
           <a href="https://learn.microsoft.com/api/credentials/share/pt-br/FilipeJanguez-6141/B9A0E8E5A0FB4B00?sharingId=91F403899C181E27"
             target="_blank">
-            <img id="certification-img" src="img\certifications\AWS-Practioner.png"
+            <img id="certification-img" src="img\certificacoes\AWS-Practioner.png"
               alt="Certificação AWS-Fundamentals" />
           </a>
         </div>
       </div>
       <h2 id="skills-section-title">Minha Experiência</h2>
-      <p class="description">Veja a experiência que tenho até o momento:</p>
+      <p class="description">Veja a experiência que possuo até o momento:</p>
+      <div id="experiencia-container">
+        <div class="experiencia-box">
+          <p class="experiencia-title">Assistente de TI</p>
+          <p class="experiencia-first-description">Colégio Rio Branco Campinas · Tempo integral</p>
+          <p class="experiencia-first-description">Jun de 2021 - Mai de 2022 · <span class="highlight">1 ano</span></p>
+          <p class="experiencia-first-description">Campinas, São Paulo, Brasil · Presencial</p>
+          <p class="experiencia-long-description">Prestei suporte técnico abrangente a uma ampla gama de usuários,
+            garantindo a funcionalidade contínua dos sistemas, computadores e redes.</p>
+          <p class="experiencia-long-description">Realizei diagnóstico e resolução de problemas relacionados a sistemas
+            operacionais Microsoft Windows, oferecendo assistência ágil e precisa para as demandas dos usuários.</p>
+          <p class="experiencia-long-description">Gerenciei e solucionei questões de hardware de TI, desde manutenção
+            preventiva até reparos avançados, otimizando o desempenho dos equipamentos.</p>
+          <p class="experiencia-long-description">Colaborei ativamente em projetos de equipe, proporcionando insights
+            valiosos e suporte técnico especializado para a implementação bem-sucedida de novas soluções tecnológicas.
+          </p>
+          <p class="experiencia-long-description">Facilitei treinamentos e orientações aos usuários finais, garantindo a
+            compreensão adequada das ferramentas e sistemas disponíveis, elevando a eficiência operacional.</p>
+          <p class="experiencia-long-description">Prestei suporte técnico abrangente a uma ampla gama de usuários,
+            garantindo a funcionalidade contínua dos sistemas, computadores e redes.</p>
+          <p class="experiencia-long-description">Realizei diagnóstico e resolução de problemas relacionados a sistemas
+            operacionais Microsoft Windows, oferecendo assistência ágil e precisa para as demandas dos usuários.</p>
+          <p class="experiencia-long-description">Gerenciei e solucionei questões de hardware de TI, desde manutenção
+            preventiva até reparos avançados, otimizando o desempenho dos equipamentos.</p>
+          <p class="experiencia-long-description">Colaborei ativamente em projetos de equipe, proporcionando insights
+            valiosos e suporte técnico especializado para a implementação bem-sucedida de novas soluções tecnológicas.
+          </p>
+          <p class="experiencia-long-description">Facilitei treinamentos e orientações aos usuários finais, garantindo a
+            compreensão adequada das ferramentas e sistemas disponíveis, elevando a eficiência operacional.</p>
+        </div>
+      </div>
     </section>
   </main>
   <!-- Ion Icons-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+
+  <!-- Script JavaScript -->
+  <script>
+    // Função para copiar o número de telefone para a área de transferência
+    function copiarNumero() {
+      // Seleciona o elemento que contém o número de telefone
+      var elementoTelefone = document.getElementById('telefone-link');
+      // Seleciona o elemento para a mensagem
+      var elementoMensagem = document.getElementById('mensagem-copiado');
+
+      // Cria um elemento de área de texto para auxiliar na cópia
+      var inputTemporario = document.createElement('input');
+      inputTemporario.setAttribute('value', elementoTelefone.innerText);
+      document.body.appendChild(inputTemporario);
+
+      // Seleciona e copia o conteúdo da área de texto
+      inputTemporario.select();
+      document.execCommand('copy');
+
+      // Remove o elemento temporário
+      document.body.removeChild(inputTemporario);
+
+      // Atualiza a mensagem de feedback
+      elementoMensagem.innerText = 'Número de telefone copiado!';
+      // Exibe a mensagem
+      elementoMensagem.style.display = 'block';
+
+      // Oculta a mensagem após alguns segundos (ajuste conforme necessário)
+      setTimeout(function () {
+        elementoMensagem.style.display = 'none';
+      }, 3000); // 3000 milissegundos = 3 segundos
+    }
+  </script>
 </body>
 
 </html>
